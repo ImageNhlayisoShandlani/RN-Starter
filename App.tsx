@@ -25,8 +25,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import {initializeApp} from 'firebase/app';
-import {getAnalytics, logEvent} from 'firebase/analytics';
+// import {initializeApp} from 'firebase/app';
+// import {getAnalytics, logEvent} from 'firebase/analytics';
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
@@ -64,20 +64,20 @@ function App(): React.JSX.Element {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  const firebaseConfig = {
-    apiKey: 'AIzaSyDVHV-30crcnI1rKGG9fKvaG-mpXILV-AY',
-    authDomain: 'prac-project-bd935.firebaseapp.com',
-    databaseURL: 'https://prac-project-bd935-default-rtdb.firebaseio.com',
-    projectId: 'prac-project-bd935',
-    storageBucket: 'prac-project-bd935.appspot.com',
-    messagingSenderId: '465066028322',
-    appId: '1:465066028322:web:69ee9597779950eca0097b',
-    measurementId: 'G-G8C8M78YD4',
-  };
+  // const firebaseConfig = {
+  //   apiKey: 'AIzaSyDVHV-30crcnI1rKGG9fKvaG-mpXILV-AY',
+  //   authDomain: 'prac-project-bd935.firebaseapp.com',
+  //   databaseURL: 'https://prac-project-bd935-default-rtdb.firebaseio.com',
+  //   projectId: 'prac-project-bd935',
+  //   storageBucket: 'prac-project-bd935.appspot.com',
+  //   messagingSenderId: '465066028322',
+  //   appId: '1:465066028322:web:69ee9597779950eca0097b',
+  //   measurementId: 'G-G8C8M78YD4',
+  // };
 
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-  logEvent(analytics, 'page_view');
+  // const app = initializeApp(firebaseConfig);
+  // const analytics = getAnalytics(app);
+  // // logEvent(analytics, 'page_view');
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
